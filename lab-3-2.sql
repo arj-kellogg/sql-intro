@@ -40,3 +40,8 @@
 -- +-------------------------------+------------------+
 
 
+SELECT name, avg(wins)
+FROM teams
+WHERE year>=2000
+GROUP By name
+ORDER BY name;
